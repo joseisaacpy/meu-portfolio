@@ -26,16 +26,63 @@
     <div class="geral">
       <!-- main -->
       <main>
+        <!-- section home -->
         <section id="home">
           <h1>Olá!👋🏽</h1>
           <h2>Me chamo José Isaac</h2>
           <p>⬇ Desliza pra baixo aí ⬇</p>
         </section>
+        <!-- section sobre -->
         <section id="sobre">
           <h2>Sobre mim</h2>
           <img src="./img/dev.png" alt="Desenvolvedor">
           <p><strong>Sou desenvolvedor web iniciante</strong> apaixonado por tecnologia e programação. Estou sempre aprendendo e criando soluções para problemas do dia a dia!</p>
-          <p>Atualmente, estou focado em estudar <strong>desenvolvimento web</strong>, com ênfase em tecnologias como <strong>HTML, CSS, JavaScript e PHP</strong>. Além disso, estou explorando <strong>bancos de dados</strong> e conceitos de <strong>design responsivo</strong> para criar aplicações modernas e acessíveis.</p></section>
+          <p>Atualmente, estou focado em estudar <strong>desenvolvimento web</strong>, com ênfase em tecnologias como <strong>HTML, CSS, JavaScript e PHP</strong>. Além disso, estou explorando <strong>bancos de dados</strong> e conceitos de <strong>design responsivo</strong> para criar aplicações modernas e acessíveis.</p>
+        </section>
+        <!-- section projetos -->
+         <section id="projetos"></section>
+         <!-- section contato -->
+         <section id="contato">
+          <h2>Fale comigo!📧</h2>
+          <form action="" method="get">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Digite seu nome"
+              required
+            />
+
+            <label for="assunto">Assunto:</label>
+            <input
+              type="text"
+              id="assunto"
+              name="assunto"
+              placeholder="Digite o assunto"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu email"
+              required
+            />
+            <label for="message">Mensagem:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Digite sua mensagem"
+              required
+              rows="5"
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+         </section>
       </main>
       <!-- footer -->
       <footer>

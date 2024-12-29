@@ -120,6 +120,52 @@ section#sobre p {
   margin-top: 0.5em;
   text-align: center;
 }
+/* section projetos */
+/* section contato */
+section#contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: gray;
+}
+section#contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+
+  width: 60%;
+  padding: 0.8em;
+  margin: 4% auto;
+
+  background-color: lightgrey;
+  border-radius: 10px;
+  border: none;
+}
+section#contato form input,
+textarea {
+  border: none;
+  border-radius: 10px;
+  padding: 0.4em;
+}
+section#contato label {
+  font-weight: bold;
+}
+section#contato form button {
+  border: none;
+  border-radius: 10px;
+
+  padding: 0.5em;
+
+  background-color: #007bff; /* cor de fundo inicial */
+  font-weight: bold;
+  color: var(--bg-white); /* cor do texto */
+  transition: all 0.3s ease; /* transição suave */
+  cursor: pointer;
+}
+section#contato form button:hover {
+  background-color: #0056b3; /* cor de fundo ao passar o mouse */
+}
 /* footer */
 footer {
   width: 100%;
@@ -155,5 +201,10 @@ footer div.redes img {
   /* aumenta tamanho da img na section sobre */
   section#sobre img {
     width: 80%;
+  }
+  /* aumenta largura do form */
+  section#contato form {
+    width: 90%;
+    gap: 0.8em;
   }
 }
