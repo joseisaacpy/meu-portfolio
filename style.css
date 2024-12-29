@@ -16,6 +16,7 @@
   font-size: 1em;
   font-family: var(--font1);
 }
+
 /* body */
 body {
   background: var(--bg-black);
@@ -25,12 +26,16 @@ body {
 /* header */
 header {
   background-color: var(--bg-black);
+  background-color: rgb(31, 64, 64);
   width: 100%;
   padding: 1em;
+  position: fixed;
+  top: 0;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
 }
 header nav ul {
   list-style-type: none;
@@ -52,9 +57,33 @@ header h1#logo {
   margin-left: 1.5em;
 }
 
-/* main */
+/* div geral ou container */
+div.geral {
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* todos os títulos h2 */
+h2 {
+  font-size: 2.5em;
+}
 
 /* section */
+section {
+  height: 100dvh;
+}
+/* home */
+section#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: url(https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+    no-repeat top center / cover fixed;
+}
+/* dar um escurecimento na section home */
+
 
 /* footer */
 footer {
