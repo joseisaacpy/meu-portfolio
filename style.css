@@ -57,3 +57,11 @@ header h1#logo {
 /* section */
 
 /* footer */
+footer {
+  width: 100%;
+  background: var(--bg-black);
+  color: var(--bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
