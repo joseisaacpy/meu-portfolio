@@ -70,6 +70,7 @@ div.geral {
 
 /* section */
 section {
+  scroll-margin-top: 80px;
   height: 100dvh;
 }
 h1 {
@@ -102,9 +103,27 @@ section#home::after {
 section#home * {
   z-index: 3;
 }
+/* section sobre */
+section#sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(31, 64, 64);
+}
+section#sobre img {
+  width: 35%;
+}
+section#sobre p {
+  width: 90%;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+  text-align: center;
+}
 /* footer */
 footer {
   width: 100%;
+  padding: 0.5em;
 
   background: var(--bg-black);
   color: var(--bg-white);
@@ -119,12 +138,22 @@ footer div.redes img {
 }
 
 /* response */
-@media (max-width: 502px) {
+@media (max-width: 700px) {
+  /* deixa cabeçalho centralizado */
   header {
     flex-direction: column;
     font-size: 80%;
   }
+  /* tira margin da logo */
   header a h1#logo {
     margin-left: 0;
+  }
+  /* diminui tamanho do paragrafo */
+  section#sobre p {
+    font-size: 1em;
+  }
+  /* aumenta tamanho da img na section sobre */
+  section#sobre img {
+    width: 80%;
   }
 }
