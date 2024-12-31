@@ -1,98 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porfólio - Isaac</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header>
-      <a href="./index.html">
-          <h1 id="logo">Isaac</h1>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- div geral ou container -->
-    <div class="geral">
-      <!-- main -->
-      <main>
-        <!-- section home -->
-        <section id="home">
-          <h1>Olá!👋🏽</h1>
-          <h2>Me chamo José Isaac</h2>
-          <p>⬇ Desliza pra baixo aí ⬇</p>
-        </section>
-        <!-- section sobre -->
-        <section id="sobre">
-          <h2>Sobre mim</h2>
-          <img src="./img/dev.png" alt="Desenvolvedor">
-          <p><strong>Sou desenvolvedor web iniciante</strong> apaixonado por tecnologia e programação. Estou sempre aprendendo e criando soluções para problemas do dia a dia!</p>
-          <p>Atualmente, estou focado em estudar <strong>desenvolvimento web</strong>, com ênfase em tecnologias como <strong>HTML, CSS, JavaScript e PHP</strong>. Além disso, estou explorando <strong>bancos de dados</strong> e conceitos de <strong>design responsivo</strong> para criar aplicações modernas e acessíveis.</p>
-        </section>
-        <!-- section projetos -->
-         <section id="projetos"></section>
-         <!-- section contato -->
-         <section id="contato">
-          <h2>Fale comigo!📧</h2>
-          <form action="" method="get">
-            <label for="name">Nome:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Digite seu nome"
-              required
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porfólio - Isaac</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <a href="./index.html"><h1 id="logo">Isaac</h1></a>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- div geral ou container -->
+  <div class="geral">
+    <!-- main -->
+    <main>
+      <!-- section home -->
+      <section id="home">
+        <h1>Olá!👋🏽</h1>
+        <h2>Me chamo José Isaac</h2>
+        <p>⬇ Desliza pra baixo aí ⬇</p>
+      </section>
+      <!-- section sobre -->
+      <section id="sobre">
+        <h2>Sobre mim</h2>
+        <img src="./img/dev.png" alt="Desenvolvedor">
+        <p><strong>Sou desenvolvedor web iniciante</strong> apaixonado por tecnologia e programação. Estou sempre aprendendo e criando soluções para problemas do dia a dia!</p>
+        <p>Atualmente, estou focado em estudar <strong>desenvolvimento web</strong>, com ênfase em tecnologias como <strong>HTML, CSS, JavaScript e PHP</strong>. Além disso, estou explorando <strong>bancos de dados</strong> e conceitos de <strong>design responsivo</strong> para criar aplicações modernas e acessíveis.</p>
+      </section>
+      <!-- section projetos -->
+      <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="container-projetos">
+        </div>
+      </section>
+      <!-- section contato -->
+      <section id="contato">
+        <h2>Fale comigo!📧</h2>
+        <form action="" method="get">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome" required />
 
-            <label for="assunto">Assunto:</label>
-            <input
-              type="text"
-              id="assunto"
-              name="assunto"
-              placeholder="Digite o assunto"
-              required
-            />
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required />
 
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Digite seu email"
-              required
-            />
-            <label for="message">Mensagem:</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Digite sua mensagem"
-              required
-              rows="5"
-            ></textarea>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" placeholder="Digite sua mensagem" required rows="5"></textarea>
 
-            <button type="submit">Enviar</button>
-          </form>
-         </section>
-      </main>
-      <!-- footer -->
-      <footer>
-          <div class="redes">
-              <a href="https://google.com" target="_blank"><img src="./img/github.png" alt=""></img></a>
-              <a href="https://google.com" target="_blank"><img src="./img/instagram.png" alt=""></img></a>
-              <a href="https://google.com" target="_blank"><img src="./img/linkedin.png" alt=""></img></a>
-            </div>
-            <p>Desenvolvido por José Isaac</p>
-      </footer>
-    </div>
-  </body>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="redes">
+        <a href="https://google.com" target="_blank"><img src="./img/github.png" alt=""></img></a>
+        <a href="https://google.com" target="_blank"><img src="./img/instagram.png" alt=""></img></a>
+        <a href="https://google.com" target="_blank"><img src="./img/linkedin.png" alt=""></img></a>
+      </div>
+      <p>Desenvolvido por José Isaac</p>
+    </footer>
+  </div>
+</body>
 </html>
