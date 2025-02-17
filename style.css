@@ -60,7 +60,7 @@ header nav ul {
   list-style-type: none;
 }
 header nav ul li {
-  margin-right: 1.5em;
+  margin-right: 1.5rem;
   display: inline-block;
 }
 header nav ul li a {
@@ -78,8 +78,8 @@ header a h1#logo {
   user-select: none;
   color: #fff;
   text-decoration: none;
-  font-size: 2em;
-  margin-left: 1.5em;
+  font-size: 2rem;
+  margin-left: 1.5rem;
 }
 
 /* div geral ou container */
@@ -94,10 +94,10 @@ section {
   height: 100dvh;
 }
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 /* home */
 section#home {
@@ -106,7 +106,7 @@ section#home {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background: url(https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+  background: url(https://images.pexels.com/photos/747101/pexels-photo-747101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
     no-repeat top center / cover fixed;
 }
 /* dar um escurecimento na section home */
@@ -136,8 +136,8 @@ section#sobre img {
 }
 section#sobre p {
   width: 90%;
-  font-size: 1.1em;
-  margin-top: 0.5em;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
   text-align: center;
 }
 /* section projetos */
@@ -161,7 +161,7 @@ section#projetos h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1rem;
   max-width: 90%;
   margin: 0 auto;
 }
