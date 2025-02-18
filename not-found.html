@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página não encontrada</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="geral">
+      <main>
+        <section id="erro">
+          <h1>404</h1>
+          <h2>Not Found</h2>
+          <p>Desculpe, essa pagina nao existe.</p>
+          <button id="btnVoltar">🔙</button>
+        </section>
+      </main>
+    </div>
+    <script>
+      // botao de voltar
+      let btnVoltar = document.getElementById("btnVoltar");
+      // adiciona funcionalidade ao botao de voltar
+      btnVoltar.addEventListener("click", () => {
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>

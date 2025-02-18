@@ -37,16 +37,17 @@ html {
 
 /* body */
 body {
-  background: var(--bg-black);
+  background: linear-gradient(var(--azulEscuro), var(--bg-black));
   color: var(--bg-white);
   font-size: 1rem;
   animation: aparicaoSuave 1.5s ease-in-out;
+  height: 100dvh;
 }
 
 /* header */
 header {
-  background-color: var(--azulEscuro);
   width: 100%;
+  background-color: var(--azulEscuro);
   padding: 1em;
   position: fixed;
   top: 0;
@@ -88,17 +89,22 @@ div.geral {
   height: 100%;
 }
 
-/* section */
+/* sections */
 section {
   scroll-margin-top: 80px;
   height: 100dvh;
 }
+
+/* titulos h1 */
 h1 {
   font-size: 3rem;
 }
+
+/* titulos h2 */
 h2 {
   font-size: 1.6rem;
 }
+
 /* home */
 section#home {
   display: flex;
@@ -123,6 +129,7 @@ section#home::after {
 section#home * {
   z-index: 3;
 }
+
 /* section sobre */
 section#sobre {
   display: flex;
@@ -140,6 +147,7 @@ section#sobre p {
   margin-top: 0.5rem;
   text-align: center;
 }
+
 /* section projetos */
 section#projetos {
   background: #000
@@ -150,12 +158,10 @@ section#projetos {
   justify-content: center;
   align-items: center;
 }
-
 section#projetos h2 {
   text-align: center;
   padding: 20px;
 }
-
 #caixa-projetos {
   display: flex;
   align-items: center;
@@ -165,7 +171,6 @@ section#projetos h2 {
   max-width: 90%;
   margin: 0 auto;
 }
-
 .projeto {
   text-align: center;
   padding: 0.5em;
@@ -183,6 +188,7 @@ section#projetos h2 {
 .projeto a:hover {
   text-decoration: underline;
 }
+
 /* section contato */
 section#contato {
   display: flex;
@@ -233,6 +239,23 @@ section#contato form button {
 }
 section#contato form button:hover {
   background-color: #0056b3; /* cor de fundo ao passar o mouse */
+}
+
+/* section erro / pagina nao encontrada */
+section#erro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* botao de voltar da pagina de erro */
+section#erro #btnVoltar {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
 }
 /* footer */
 footer {
