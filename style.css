@@ -176,14 +176,14 @@ section#projetos h2 {
   padding: 0.5em;
   border-radius: 10px;
   border: none;
-  box-shadow: 1px 1px 10px #ffffff9c;
-  background: gray;
+  background: var(--bg-black);
+  color: var(--bg-white);
   flex: 1 1 200px; /* Permite que os itens cresçam e encolham */
 }
 .projeto a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--azulEscuro);
+  color: #00a2ff;
 }
 .projeto a:hover {
   text-decoration: underline;
