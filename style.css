@@ -183,7 +183,7 @@ section#projetos h2 {
 .projeto a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--azulClaro);
+  color: var(--azulEscuro);
 }
 .projeto a:hover {
   text-decoration: underline;
