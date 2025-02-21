@@ -139,7 +139,10 @@ section#sobre {
   background: var(--azulEscuro);
 }
 section#sobre img {
+  margin: 5px;
   width: 35%;
+  border-radius: 50%;
+  filter: drop-shadow(1px 1px 10px #fff);
 }
 section#sobre p {
   width: 90%;
