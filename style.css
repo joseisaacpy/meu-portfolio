@@ -260,6 +260,11 @@ section#contato form button {
   transition: all 0.3s ease; /* transição suave */
   cursor: pointer;
 }
+/* icone dentro do botao do form de contato */
+section#contato form button i {
+  margin-left: 5px;
+}
+
 /* botao de form de contato ao passar o mouse */
 section#contato form button:hover {
   background-color: #0056b3; /* cor de fundo ao passar o mouse */
