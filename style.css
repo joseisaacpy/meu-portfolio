@@ -1,4 +1,4 @@
-/* animacao */
+/* animacao de aparicao suave */
 @keyframes aparicaoSuave {
   from {
     opacity: 0;
@@ -7,6 +7,18 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* animação de quicar */
+@keyframes quicar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -138,6 +150,11 @@ section#home * {
   z-index: 3;
 }
 
+/* ícones da seção home */
+section#home p i {
+  animation: quicar 3s infinite ease-in-out;
+  margin: 0 5px;
+}
 /* section sobre */
 section#sobre {
   display: flex;
@@ -215,6 +232,10 @@ section#contato {
   flex-direction: column;
   background: gray;
 }
+/* ícone de email no titulo */
+section#contato h2 i {
+  margin-left: 5px;
+}
 /* form dentro da section contato */
 section#contato form {
   display: flex;
@@ -266,7 +287,8 @@ section#contato form button i {
 }
 
 /* botao de form de contato ao passar o mouse */
-section#contato form button:hover {
+form button:hover,
+form button:focus {
   background-color: #0056b3; /* cor de fundo ao passar o mouse */
 }
 
@@ -323,7 +345,7 @@ footer div.redes img {
 @media (max-width: 700px) {
   /* tamanho da fonte */
   html {
-    font-size: 12px;
+    font-size: 15px;
   }
   /* deixa cabeçalho centralizado */
   header {
