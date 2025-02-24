@@ -150,6 +150,10 @@ section#home * {
   z-index: 3;
 }
 
+/* strong no titulo h2 */
+section#home h2 strong {
+  color: var(--azulClaro);
+}
 /* ícones da seção home */
 section#home p i {
   animation: quicar 3s infinite ease-in-out;
@@ -183,6 +187,7 @@ section#projetos {
   background: #000
     url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
     no-repeat center center / cover fixed;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,7 +204,7 @@ section#projetos h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1rem; /* espaco entre os projetos, onde futuramente pode ser diminuido */
   max-width: 90%;
   margin: 0 auto;
 }
@@ -345,7 +350,7 @@ footer div.redes img {
 @media (max-width: 700px) {
   /* tamanho da fonte */
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
   /* deixa cabeçalho centralizado */
   header {
@@ -371,7 +376,11 @@ footer div.redes img {
   }
 }
 @media (max-width: 320px) {
-  html {
-    font-size: 10px;
+  header nav ul {
+    display: flex;
+    gap: 10px;
+  }
+  header nav ul li {
+    margin-right: 0;
   }
 }
