@@ -326,10 +326,22 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 1rem;
 }
 /* div de redes do footer */
-footer div.redes img {
-  width: 2em;
+footer div.redes {
+  gap: 1rem;
+  display: flex;
+}
+/* icones */
+footer div.redes i {
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+/* icones ao passar o mouse */
+footer div.redes i:hover {
+  color: var(--azulPadrao);
 }
 
 /* Personalização da barra de rolagem */
