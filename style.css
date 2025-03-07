@@ -127,12 +127,14 @@ h2 {
 /* home */
 section#home {
   display: flex;
+  gap: 0.5rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   background: url(https://images.pexels.com/photos/747101/pexels-photo-747101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
     no-repeat top center / cover fixed;
+  position: relative;
 }
 /* dar um escurecimento na section home */
 section#home::after {
